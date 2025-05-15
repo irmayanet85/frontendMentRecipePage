@@ -1,0 +1,234 @@
+/*@font-face {
+  font-family: 'Young Serif';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}*/
+
+:root{
+    --color-White: hsl(0, 0%, 100%); 
+    --color-Stone-100: hsl(30, 54%, 90%);
+    --color-Stone-150: hsl(30, 18%, 87%);
+    --color-Stone-600: hsl(30, 10%, 34%);
+    --color-Stone-900: hsl(24, 5%, 18%);
+    --color-Brown-800: hsl(14, 45%, 36%);
+    --color-Rose-800: hsl(332, 51%, 32%);
+    --color-Rose-50: hsl(330, 100%, 98%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--color-Stone-100);
+    color: var(--color-Stone-900);
+    font-weight: 400;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card {
+    background-color: var(--color-White);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 740px;
+    text-align: left;
+}
+.card-header {
+    width: 100%;
+    padding: 0px 40px 0px 40px;
+    text-align: left;
+}
+.card-body {
+    padding: 0px 40px 0px 40px;
+    width: 100%;
+    text-align: left;
+}
+.card-image{
+    border-radius: 12px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+.card-section-preparation-subtitle  {
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+.card-title {
+    font-family: "Young Serif", "Outfit";
+    font-weight: 400;
+    font-size: 38px;
+    margin-bottom: 22px;
+    letter-spacing: 1.5px;
+}
+.card-description {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    color: var(--color-Stone-900)
+}
+.font-weight-700-Outfit-middle {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+}
+.font-weight-400-Outfit {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.font-weight-400-Outfit-middle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.font-weight-400-Young-Serif-subtitle {
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+}
+.stone-900 {
+    color: var(--color-Stone-900);
+}
+.stone-600 {
+    color: var(--color-Stone-600);
+}
+.rose-800 {
+    color: var(--color-Rose-800);
+}
+.brown-800 {
+    color: var(--color-Brown-800);
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.card-section-preparation{
+  display: flex;
+  flex-direction: column;
+  padding: 39px 30px 20px 30px;
+  background-color: var(--color-Rose-50);
+  border-radius: 12px;
+  margin-bottom: 24px;
+  
+}
+.card-section-preparation ul {
+  padding-left: 20px;
+}
+.card-section-preparation li {
+  color: var(--color-Rose-800);
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.ml-20 {
+  margin-left: 18px;
+}
+
+.card-section-ingredients{
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2px;
+
+}
+.card-section-ingredients ul {
+  padding-left: 20px;
+}
+.card-section-ingredients li {
+  color: var(--color-Rose-800);
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.card-section-instructions{
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-right: 24px;
+  font-size: 14px;
+}
+.card-section-nutrition{
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-right: 24px;
+  font-size: 14px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.card-section-instructions ol {
+  padding-left: 20px;
+  padding-top: 10px; 
+  color: var(--color-Rose-800);
+}
+.card-section-instructions li {
+  margin-bottom: 12px;
+}
+.nutrition-table {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.nutrition-table-body tr > td{
+  border: none;
+  border-bottom: 1px solid #ccc; 
+  padding: 13px 13px 13px 20px;
+}
+.nutrition-table-body tr:last-child td {
+  border-bottom: none;
+}
+  
+hr {
+  border: none;
+  border-top: 1px solid #ccc; 
+  margin: 18px 0px 0px 0px;             
+}
+
+@media (max-width: 376px){
+   .card-header {
+    padding: 0px;
+   }
+   .card-title {
+    font-size: 32px;
+    margin-bottom: 22px;
+    letter-spacing: 1px;
+    line-height: 32px;
+   }
+   .card-body {
+    padding: 0px 30px 0px 30px;
+    width: 100%;
+    text-align: left;
+}
+}
