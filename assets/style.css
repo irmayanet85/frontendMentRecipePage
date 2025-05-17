@@ -38,21 +38,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-    height: 100%;
-}
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--color-Stone-100);
     color: var(--color-Stone-900);
     font-weight: 400;
-    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 .card {
     background-color: var(--color-White);
@@ -65,7 +64,7 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-     min-height: 100vh;
+    
 }
 .card-header {
     width: 100%;
@@ -89,7 +88,6 @@ body {
 }
 .card-section-preparation-subtitle  {
     font-size: 20px;
-    margin-bottom: 13px;
 }
 .card-title {
     font-family: "Young Serif", "Outfit";
@@ -101,7 +99,7 @@ body {
 .card-description {
     font-weight: 500;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     line-height: 22px;
     color: var(--color-Stone-900)
 }
@@ -148,14 +146,15 @@ body {
 .card-section-preparation{
   display: flex;
   flex-direction: column;
-  padding: 39px 30px 20px 30px;
+  padding: 26px 30px 10px 32px;
   background-color: var(--color-Rose-50);
   border-radius: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   
 }
 .card-section-preparation ul {
   padding-left: 20px;
+  padding-top: 10px;
 }
 .card-section-preparation li {
   color: var(--color-Rose-800);
@@ -175,6 +174,7 @@ body {
 }
 .card-section-ingredients ul {
   padding-left: 20px;
+  padding-top: 8px;
 }
 .card-section-ingredients li {
   color: var(--color-Rose-800);
@@ -194,6 +194,7 @@ body {
   padding-top: 24px;
   padding-right: 24px;
   font-size: 14px;
+  padding-bottom: 22px;
 }
 .pt-10 {
   padding-top: 10px;
@@ -222,7 +223,7 @@ body {
 hr {
   border: none;
   border-top: 1px solid #ccc; 
-  margin: 18px 0px 0px 0px;             
+  margin: 20px 0px 0px 0px;             
 }
 
 @media (max-width: 376px){
